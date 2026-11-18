@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DirtRide IL - מסלולי רכיבה בישראל</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- content page: only the content. The frame comes from js/master.js -->
+    <main id="MainContent">
+
+        <section class="banner">
+            <img src="images/scene_dunes.svg" alt="רוכב בדיונות חול">
+            <div class="banner-text">
+                <h1>לרכוב בישראל</h1>
+                <p>מדינה קטנה עם שטח מגוון במיוחד: בזלת, יערות, חולות ומדבר</p>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>מפת אזורי הרכיבה</h2>
+            <p>לחצו על נקודה במפה כדי לקרוא על האזור.</p>
+            <div class="map-wrap">
+                <div class="map" id="map">
+                    <img src="images/map_israel.svg" alt="מפה סכמטית של ישראל">
+                </div>
+                <div id="regionInfo" class="card" style="text-align:right">
+                    <h3>בחרו אזור במפה</h3>
+                    <p>כל נקודה היא אזור עם אופי שטח אחר. ליד כל אזור תמצאו את רמת הקושי, סוג השטח והעונה המומלצת.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>האזורים במבט אחד</h2>
+            <div class="tabs" id="levelFilter">
+                <button class="tab active" data-level="0">כל הרמות</button>
+                <button class="tab" data-level="2">עד 2 כוכבים</button>
+                <button class="tab" data-level="3">עד 3 כוכבים</button>
+            </div>
+            <div class="grid" id="regionCards"></div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>גלריה</h2>
+            <div class="slideshow">
+                <img id="slideImg" src="images/scene_golan.svg" alt="">
+                <div class="caption" id="slideCaption"></div>
+                <button class="prev" id="prevBtn" title="הקודם">›</button>
+                <button class="next" id="nextBtn" title="הבא">‹</button>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>רוכבים באחריות</h2>
+            <div class="grid">
+                <div class="card"><img class="icon" src="images/icon_rules.svg" alt=""><h3>רק במקום מותר</h3><p>רוכבים במסלולים מוסדרים ובדרכים מסומנות. אסור לרכוב בשמורות טבע ובגנים לאומיים.</p></div>
+                <div class="card"><img class="icon" src="images/icon_helmet.svg" alt=""><h3>ציוד מלא</h3><p>קסדה, משקפי מגן, כפפות, מגני גוף ומגפיים. בכל רכיבה, גם קצרה.</p></div>
+                <div class="card"><img class="icon" src="images/icon_friends.svg" alt=""><h3>לא רוכבים לבד</h3><p>יוצאים בקבוצה, ומספרים למישהו לאן נוסעים ומתי חוזרים.</p></div>
+                <div class="card"><img class="icon" src="images/icon_nature.svg" alt=""><h3>שומרים על הטבע</h3><p>לא יורדים מהדרך, לא משאירים פסולת, ונזהרים ממטיילים ומבעלי חיים.</p></div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/master.js"></script>
+    <script src="js/tracks.js"></script>
+</body>
+</html>

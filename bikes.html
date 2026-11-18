@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DirtRide IL - סוגי אופנועים ויצרנים</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- content page: only the content. The frame comes from js/master.js -->
+    <main id="MainContent">
+
+        <section class="banner">
+            <img src="images/comp_mxgp.svg" alt="שלושה אופנועי מוטוקרוס במרוץ">
+            <div class="banner-text">
+                <h1>סוגי אופנועי שטח</h1>
+                <p>לכל סוג שטח ולכל סגנון רכיבה יש אופנוע שנבנה במיוחד בשבילו</p>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>הכירו את הסוגים</h2>
+            <p>לחצו על אופנוע כדי לקרוא עליו עוד. אפשר גם לסנן לפי השימוש.</p>
+            <div class="tabs" id="filters">
+                <button class="tab active" data-filter="all">הכל</button>
+                <button class="tab" data-filter="track">למסלול סגור</button>
+                <button class="tab" data-filter="road">מותר בכביש</button>
+                <button class="tab" data-filter="beginner">מתאים למתחילים</button>
+            </div>
+            <div class="grid" id="bikeCards"></div>
+            <div class="details" id="bikeDetails"></div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>השוואה מהירה</h2>
+            <table>
+                <thead><tr><th>סוג</th><th>איפה רוכבים</th><th>מותר בכביש?</th><th>משקל</th><th>נפח מנוע אופייני</th></tr></thead>
+                <tbody id="compareTable"></tbody>
+            </table>
+        </section>
+
+        <section class="panel reveal">
+            <h2>היצרנים המובילים</h2>
+            <p>רוב אופנועי השטח בעולם מגיעים מיפן, מאוסטריה, מאיטליה ומספרד. לכל יצרן יש צבע מזוהה, ורוכבים מזהים אופנוע לפי הצבע עוד מרחוק.</p>
+            <div class="grid" id="brands"></div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>איזה אופנוע מתאים לי?</h2>
+            <p>ענו על שלוש שאלות וקבלו המלצה.</p>
+            <div id="quiz"></div>
+            <button class="btn primary" id="quizBtn">מה מתאים לי?</button>
+            <div id="quizResult"></div>
+        </section>
+
+    </main>
+    <script src="js/master.js"></script>
+    <script src="js/bikes.js"></script>
+</body>
+</html>

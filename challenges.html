@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DirtRide IL - אתגר, כיף ותחרויות</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- content page: only the content. The frame comes from js/master.js -->
+    <main id="MainContent">
+
+        <section class="banner">
+            <img src="images/scene_track.svg" alt="רוכב באוויר מעל קפיצה במסלול">
+            <div class="banner-text">
+                <h1>אתגר וכיף על שני גלגלים</h1>
+                <p>למה כל כך הרבה אנשים מתאהבים ברכיבה בשטח, ומה צריך כדי להתחיל</p>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>למה זה כל כך כיף?</h2>
+            <div class="grid">
+                <div class="card"><img class="icon" src="images/icon_speed.svg" alt=""><h3>אדרנלין</h3><p>האצה, קפיצות ופניות חדות: כל רכיבה מרגישה כמו הרפתקה.</p></div>
+                <div class="card"><img class="icon" src="images/icon_nature.svg" alt=""><h3>טבע ונופים</h3><p>מגיעים למקומות שרכב רגיל לא מגיע אליהם: מדבר, הרים ויערות.</p></div>
+                <div class="card"><img class="icon" src="images/icon_friends.svg" alt=""><h3>חברים וקהילה</h3><p>רוכבים בקבוצה, עוזרים זה לזה במכשולים, וחולקים חוויות.</p></div>
+                <div class="card"><img class="icon" src="images/icon_mountain.svg" alt=""><h3>להתגבר על מכשולים</h3><p>עלייה שלא הצלחתם אתמול והצלחתם היום: תחושת הישג אמיתית.</p></div>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>האתגרים</h2>
+            <p class="lead">רכיבת שטח נראית קלה מהצד, אבל היא דורשת מהגוף ומהראש הרבה יותר ממה שחושבים.</p>
+            <div class="grid">
+                <div class="card"><img class="icon" src="images/icon_fitness.svg" alt=""><h3>כושר גופני</h3><p>רוכבים רוב הזמן בעמידה. הרגליים, הידיים והגב עובדים בלי הפסקה.</p></div>
+                <div class="card"><img class="icon" src="images/icon_balance.svg" alt=""><h3>שיווי משקל וטכניקה</h3><p>מיקום הגוף, שימוש נכון במצמד ובבלמים, ומבט קדימה אל הקו הבא.</p></div>
+                <div class="card"><img class="icon zoom" src="images/scene_golan.svg" alt="שטח סלעי"><h3>שטח משתנה</h3><p>חול רך, בוץ, סלעים, עליות תלולות וערוצים: כל סוג שטח דורש טכניקה אחרת.</p></div>
+                <div class="card"><img class="icon" src="images/icon_brain.svg" alt=""><h3>ריכוז והחלטות מהירות</h3><p>בכל שנייה מחליטים: איפה לעבור, באיזה הילוך, ומתי לבלום.</p></div>
+            </div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>ציוד מגן: רשימת בדיקה לפני רכיבה</h2>
+            <p>סמנו כל פריט שיש לכם. רוכבים רק כשכל הרשימה מסומנת!</p>
+            <div class="gear" id="gearList"></div>
+            <div class="progress"><div id="gearBar"></div></div>
+            <div id="gearMessage"></div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>תחרויות בישראל ובעולם</h2>
+            <div class="tabs">
+                <button class="tab active" data-tab="israel">בישראל</button>
+                <button class="tab" data-tab="world">בעולם</button>
+            </div>
+            <div class="grid" id="contests"></div>
+        </section>
+
+        <section class="panel reveal">
+            <h2>ציר זמן: מתי התחילו התחרויות הגדולות?</h2>
+            <div class="timeline" id="timeline"></div>
+        </section>
+
+    </main>
+    <script src="js/master.js"></script>
+    <script src="js/challenges.js"></script>
+</body>
+</html>
